@@ -24,8 +24,13 @@ dilated=cv.dilate(canny,(7,7),iterations=3)
 # cv.imshow("dilated",dilated)
 
 #resizing images
-rs=cv.resize(img,(500,500))
-cv.imshow('resized',rs)
+rs=cv.resize(img,(200,200),interpolation=cv.INTER_CUBIC)
+# cv.imshow('resized',rs)
+
+#croping image
+croped=img[50:200,200:400]
+cv.imshow("crpd",croped)
+
 
 
 cv.waitKey(0)
