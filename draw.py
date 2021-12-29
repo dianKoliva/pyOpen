@@ -14,7 +14,16 @@ blank=np.zeros((500,500,3),dtype='uint8')
 # cv.imshow('Rect',blank)
 
 #draw a circle
-cv.circle(blank,(250,250),40,(0,0,250),thickness=3)
-cv.show('Circl',blank)
+# cv.circle(blank,(250,250),40,(0,0,250),thickness=3)
+# cv.imshow('Circl',blank)
+
+# draw a line
+# cv.line(blank,(10,10),(250,10),(255,255,255),thickness=3)
+# cv.imshow('Line',blank)
+
+
+# write text
+cv.putText(blank,"hello",(225,225),cv.FONT_HERSHEY_TRIPLEX,0.4,(0,240,250),1)
+cv.imshow("text",blank)
 
 cv.waitKey(0)
