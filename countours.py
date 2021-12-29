@@ -9,7 +9,7 @@ gray=cv.cvtColor(img,cv.COLOR_BGR2GRAY)
 canny=cv.Canny(img,125,175)
 # cv.imshow('canny',canny)
 
-conts,hics=cv.findContours(canny,cv.RETR_LIST,cv.CHAIN_APPROX_NONE)
+conts,hics=cv.findContours(canny,cv.RETR_LIST,cv.CHAIN_APPROX_SIMPLE)
 print(f'number of conts found {len(conts)}')
 
 cv.waitKey(0)
