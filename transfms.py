@@ -40,5 +40,8 @@ resized =cv.resize(img,(500,500),interpolation=cv.INTER_CUBIC)
 
 #flipping image
 flip=cv.flip(img,-1)
-cv.imshow("f",flip)
+# cv.imshow("f",flip)
+
+#cropping 
+
 cv.waitKey(0)
