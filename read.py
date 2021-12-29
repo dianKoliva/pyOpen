@@ -8,4 +8,5 @@ import cv2 as cv
 
 # reading videos 
 
+capture=cv.VideoCapture()
 cv.waitKey(0)
