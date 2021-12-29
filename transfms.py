@@ -33,6 +33,12 @@ rotated=rotate(img,45)
 # cv.imshow('rotated',rotated)
 
 # resize image
+# enlarging use cubic and area
 resized =cv.resize(img,(500,500),interpolation=cv.INTER_CUBIC)
+# cv.imshow("b",resized);
 
+
+#flipping image
+flip=cv.flip(img,-1)
+cv.imshow("f",flip)
 cv.waitKey(0)
