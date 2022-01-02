@@ -1,5 +1,7 @@
 import cv2 as cv
 img=cv.imread('imgs/1.jfif')
-cv.imshow("one",img)
 
+
+gray=cv.cvtColor(img,cv.COLOR_BGR2GRAY)
+cv.imshow("tda",gray)
 cv.waitKey(0)
